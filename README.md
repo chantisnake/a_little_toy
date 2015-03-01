@@ -26,4 +26,4 @@ if you are using windows or mac, make sure you have python 3.4, and you can use 
 Inpired by my RA, she label each room with our name consist of elements
 
 And also, Fiona, my schoolmate, said that if I finish this she will rate me the second adorable Chinese Boy in the class of 2018,
-<span style="text-decoration:line-through;">although we only have like 6 Chinese boy in the class of 2018 ...</span>
+a̶l̶t̶h̶o̶u̶g̶h̶ ̶w̶e̶ ̶o̶n̶l̶y̶ ̶h̶a̶v̶e̶ ̶l̶i̶k̶e̶ ̶6̶ ̶C̶h̶i̶n̶e̶s̶e̶ ̶b̶o̶y̶ ̶i̶n̶ ̶t̶h̶e̶ ̶c̶l̶a̶s̶s̶ ̶o̶f̶ ̶2̶0̶1̶8̶ ̶.̶.̶.̶
