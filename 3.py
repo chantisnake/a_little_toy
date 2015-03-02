@@ -12,7 +12,7 @@ def rearrange(data):
     for i in elements:
         i.insert(0, len(i[0]))
         i[1] = i[1].lower()
-    elements = sorted(elements, key=lambda element: element[0], reverse=True)
+    elements = sorted(elements, key=lambda a: a[0], reverse=True)
     print("here is the rearranged list:")
     print(elements)
     print()
@@ -68,7 +68,7 @@ def frontwardanlysis(name, data):
             print("nothing found running regular analysis: ")
         # regular analysis
         for element in data:
-            # print(element)
+            print(element)
             # if the pointer haven't been detected.
             # if this is at the beginning, save it
             if name.find(element[1]) == 0:
@@ -88,7 +88,7 @@ def frontwardanlysis(name, data):
                 unused.append([element, name.find(element[1])])
                 print(unused[-1])
             # if all the choice cannot satisfy
-            elif element == data[-1]:
+            if element == data[-1]:
                 # find approximation
                 print("no element found, finding approximation...")
                 used.append(approximate(name, 'f', data))
@@ -134,7 +134,7 @@ def backwardanlysis(name, data):
             print("nothing found running regular analysis: ")
         # regular analysis
         for element in data:
-            # print(element)
+            print(element)
             # if the pointer haven't been detected.
             # if this is at the biginning, save it
             if name.rfind(element[1]) == len(name) - 1:
@@ -153,7 +153,7 @@ def backwardanlysis(name, data):
                 # save the element and the position of the end of the element
                 print(unused[-1])
             # if all the choice cannot satisfy
-            elif element == data[-1]:
+            if element == data[-1]:
                 # find approximation
                 print("no element found, finding approximation...")
                 used.insert(0, approximate(name, 'b', data))
@@ -173,9 +173,11 @@ def compare(a, b):
     for all in a:
         if all == "null":
             nulla = True
+            break
     for all in b:
         if all == "null":
             nullb = True
+            break
 
     if nulla and nullb:
         print('we cannot find a appropriate combination to suit your need, if you think this is wrong please leave a comment')
@@ -207,7 +209,7 @@ def approximate(name, test, data):
                     return element
             except:
                 pass
-    print("Error: nothing found, return a space")
+    print("Error: nothing found, return null")
     return "null"
 
 
