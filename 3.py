@@ -207,7 +207,7 @@ def approximate(name, test, data):
                     return element
             except:
                 pass
-    print("Error: nothing found, return a space")
+    print("Error: nothing found, return null")
     return "null"
 
 
